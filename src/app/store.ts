@@ -1,9 +1,9 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import chatReducer from '../modules/chat/Chat.reducer';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    chat: chatReducer,
   },
 });
 
